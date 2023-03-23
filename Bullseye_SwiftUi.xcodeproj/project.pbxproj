@@ -16,6 +16,7 @@
 		A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F9DA229BDCB1C00BCE966 /* ContentView.swift */; };
 		A47F9DA529BDCB1D00BCE966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47F9DA429BDCB1D00BCE966 /* Assets.xcassets */; };
 		A47F9DA929BDCB1D00BCE966 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47F9DA829BDCB1D00BCE966 /* Preview Assets.xcassets */; };
+		A4892B8429CC82C000F2F137 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4892B8329CC82C000F2F137 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		A47F9DA429BDCB1D00BCE966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47F9DA629BDCB1D00BCE966 /* Bullseye_SwiftUi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bullseye_SwiftUi.entitlements; sourceTree = "<group>"; };
 		A47F9DA829BDCB1D00BCE966 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4892B8329CC82C000F2F137 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				A43B9C9229CB00B900992792 /* TextViews.swift */,
 				A43B9C9429CB09B300992792 /* Shapes.swift */,
 				A43B9C9629CB0D9500992792 /* RoundedViews.swift */,
+				A4892B8329CC82C000F2F137 /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				A43B9C9729CB0D9500992792 /* RoundedViews.swift in Sources */,
 				A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */,
 				A43B9C9329CB00B900992792 /* TextViews.swift in Sources */,
+				A4892B8429CC82C000F2F137 /* BackgroundView.swift in Sources */,
 				A43B9C9529CB09B300992792 /* Shapes.swift in Sources */,
 				A415E5CD29C46DEE00CCFB05 /* Game.swift in Sources */,
 				A47F9DA129BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift in Sources */,
