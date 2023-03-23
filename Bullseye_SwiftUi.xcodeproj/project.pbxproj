@@ -10,6 +10,8 @@
 		A415E5CD29C46DEE00CCFB05 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A415E5CC29C46DEE00CCFB05 /* Game.swift */; };
 		A415E5D529C4730900CCFB05 /* Bullseye_SwiftUiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A415E5D429C4730900CCFB05 /* Bullseye_SwiftUiTests.swift */; };
 		A43B9C9329CB00B900992792 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9C9229CB00B900992792 /* TextViews.swift */; };
+		A43B9C9529CB09B300992792 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9C9429CB09B300992792 /* Shapes.swift */; };
+		A43B9C9729CB0D9500992792 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9C9629CB0D9500992792 /* RoundedViews.swift */; };
 		A47F9DA129BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F9DA029BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift */; };
 		A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F9DA229BDCB1C00BCE966 /* ContentView.swift */; };
 		A47F9DA529BDCB1D00BCE966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47F9DA429BDCB1D00BCE966 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		A415E5D229C4730900CCFB05 /* Bullseye_SwiftUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bullseye_SwiftUiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A415E5D429C4730900CCFB05 /* Bullseye_SwiftUiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullseye_SwiftUiTests.swift; sourceTree = "<group>"; };
 		A43B9C9229CB00B900992792 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		A43B9C9429CB09B300992792 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		A43B9C9629CB0D9500992792 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		A47F9D9D29BDCB1C00BCE966 /* Bullseye_SwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye_SwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47F9DA029BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullseye_SwiftUiApp.swift; sourceTree = "<group>"; };
 		A47F9DA229BDCB1C00BCE966 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			children = (
 				A47F9DA229BDCB1C00BCE966 /* ContentView.swift */,
 				A43B9C9229CB00B900992792 /* TextViews.swift */,
+				A43B9C9429CB09B300992792 /* Shapes.swift */,
+				A43B9C9629CB0D9500992792 /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43B9C9729CB0D9500992792 /* RoundedViews.swift in Sources */,
 				A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */,
 				A43B9C9329CB00B900992792 /* TextViews.swift in Sources */,
+				A43B9C9529CB09B300992792 /* Shapes.swift in Sources */,
 				A415E5CD29C46DEE00CCFB05 /* Game.swift in Sources */,
 				A47F9DA129BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift in Sources */,
 			);
