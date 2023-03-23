@@ -16,13 +16,11 @@ struct ContentView: View {
     ZStack {
       BackgroundView(game: $game)
       VStack {
-        VStack {
-          InstructionView(game: $game)
-          SliderView(sliderValue: $sliderValue)
-          HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
-        }
-        .padding()
+        InstructionView(game: $game)
+          .padding(.bottom, 100)
+        HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
       }
+      SliderView(sliderValue: $sliderValue)
     }
   }
 }
@@ -81,7 +79,7 @@ struct HitMeButton: View {
       isPresented: $alertIsVisible,
       actions: {
         Button("Awesome") {
-          print("Alert closed")
+          game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
         }
       },
       message: {

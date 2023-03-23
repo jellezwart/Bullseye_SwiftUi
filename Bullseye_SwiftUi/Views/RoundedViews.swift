@@ -29,8 +29,8 @@ struct RoundedImageViewsFilled: View {
       .foregroundColor(Color("ButtonFilledTextColor"))
       .frame(width: 56, height: 56)
       .background(
-      Circle()
-        .fill(Color("ButtonFilledBackgroundColor")))
+        Circle()
+          .fill(Color("ButtonFilledBackgroundColor")))
   }
 }
 
