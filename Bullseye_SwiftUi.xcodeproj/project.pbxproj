@@ -14,6 +14,7 @@
 		A43B9C9729CB0D9500992792 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B9C9629CB0D9500992792 /* RoundedViews.swift */; };
 		A47CB2F029CD955D00500693 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB2EF29CD955D00500693 /* PointsView.swift */; };
 		A47CB2F229CDA88E00500693 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB2F129CDA88E00500693 /* Constants.swift */; };
+		A47CB2F429CDACDD00500693 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CB2F329CDACDD00500693 /* LeaderboardView.swift */; };
 		A47F9DA129BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F9DA029BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift */; };
 		A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47F9DA229BDCB1C00BCE966 /* ContentView.swift */; };
 		A47F9DA529BDCB1D00BCE966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47F9DA429BDCB1D00BCE966 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		A43B9C9629CB0D9500992792 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		A47CB2EF29CD955D00500693 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		A47CB2F129CDA88E00500693 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A47CB2F329CDACDD00500693 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		A47F9D9D29BDCB1C00BCE966 /* Bullseye_SwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye_SwiftUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47F9DA029BDCB1C00BCE966 /* Bullseye_SwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullseye_SwiftUiApp.swift; sourceTree = "<group>"; };
 		A47F9DA229BDCB1C00BCE966 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				A43B9C9629CB0D9500992792 /* RoundedViews.swift */,
 				A4892B8329CC82C000F2F137 /* BackgroundView.swift */,
 				A47CB2EF29CD955D00500693 /* PointsView.swift */,
+				A47CB2F329CDACDD00500693 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47CB2F429CDACDD00500693 /* LeaderboardView.swift in Sources */,
 				A43B9C9729CB0D9500992792 /* RoundedViews.swift in Sources */,
 				A47F9DA329BDCB1C00BCE966 /* ContentView.swift in Sources */,
 				A43B9C9329CB00B900992792 /* TextViews.swift in Sources */,
@@ -433,6 +437,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -471,6 +476,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bull's Eye";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
