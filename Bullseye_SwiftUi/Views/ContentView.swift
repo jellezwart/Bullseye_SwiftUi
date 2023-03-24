@@ -17,10 +17,20 @@ struct ContentView: View {
       BackgroundView(game: $game)
       VStack {
         InstructionView(game: $game)
-          .padding(.bottom, 100)
-        HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+          .padding(.bottom, alertIsVisible ?  0 : 100)
+        if alertIsVisible {
+          PointsView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+            .transition(.scale)
+        } else {
+          HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+            .transition(.scale)
+        }
       }
-      SliderView(sliderValue: $sliderValue)
+      if !alertIsVisible {
+        SliderView(sliderValue: $sliderValue)
+          .zIndex(1)
+          .transition(.scale)
+      }
     }
   }
 }
@@ -56,8 +66,11 @@ struct HitMeButton: View {
   @Binding var game: Game
   
   var body: some View {
+    
     Button("Hit me".uppercased()) {
-      alertIsVisible = true
+      withAnimation {
+        alertIsVisible = true
+      }
     }
     .padding(20.0)
     .background(
@@ -67,29 +80,14 @@ struct HitMeButton: View {
       }
     )
     .overlay(
-      RoundedRectangle(cornerRadius: 21)
-        .strokeBorder(Color.white, lineWidth: 2)
+      RoundedRectangle(cornerRadius: Constants.General.roundedRectCornerRadius)
+        .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth)
     )
     .foregroundColor(.white)
-    .cornerRadius(21.0)
+    .cornerRadius(Constants.General.roundedRectCornerRadius)
     .bold()
     .font(.title3)
-    .alert(
-      "Hello there",
-      isPresented: $alertIsVisible,
-      actions: {
-        Button("Awesome") {
-          game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
-        }
-      },
-      message: {
-        let roundedValue = Int(sliderValue.rounded())
-        Text("""
-            The slider value is \(roundedValue).
-            You scores \(game.points(sliderValue: roundedValue)) points this round.
-          """)
-      }
-    )
+    
   }
 }
 
@@ -97,7 +95,8 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
     ContentView()
+      .previewInterfaceOrientation(.landscapeRight)
       .preferredColorScheme(.dark)
-      .previewDevice("iPhone 14 Pro Max")
+    
   }
 }
